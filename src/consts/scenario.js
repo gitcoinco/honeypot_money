@@ -1,0 +1,16 @@
+import { generateCSSClases } from "../utils/scenario";
+
+export const leftFlower = generateCSSClases("left-flower", 3)
+export const rightFlower = generateCSSClases("right-flower", 3)
+export const leftInsect = generateCSSClases("left-insect", 2)
+export const rightInsect = generateCSSClases("right-insect", 2)
+export const leftPlant = generateCSSClases("left-plant", 2)
+export const rightPlant = generateCSSClases("right-plant", 2)
+export const leftGrass = generateCSSClases("left-grass", 5)
+export const rightGrass = generateCSSClases("right-grass", 5)
+export const leftShroom = generateCSSClases("left-shroom", 2)
+export const rightShroom = generateCSSClases("right-shroom", 2)
+export const leftFungi = generateCSSClases("left-fungus", 2)
+export const rightFungi = generateCSSClases("right-fungus", 2)
+export const leftNightGrass = generateCSSClases("left-night-grass", 2)
+export const rightNightGrass = generateCSSClases("right-night-grass", 2)
