@@ -1,17 +1,32 @@
 import {useState} from "react";
 import Web3 from "web3";
+import { get_personhoodscore } from '../../utils/pop_api'
 
 export function Web3Connector({details, isDaytime, showCampaign, setActiveCampaign}) {
     const [address, setAddress] = useState('')
+    const ENDPOINT = process.env.REACT_APP_API_ENDPOINT
+
     const connectWeb3 = async () => {
         if (window.ethereum) {
             window.web3 = new Web3(window.ethereum);
 
             await window.ethereum.enable()
 
-            window.web3.eth.getAccounts(function (error, address) {
+            window.web3.eth.getAccounts(async function (error, address) {
                 if (!error) {
-                   setAddress(address[0])
+                  const currentAddress = address[0]
+                  setAddress(currentAddress)
+                    try {
+                      const ps = await get_personhoodscore('mainnet', currentAddress)
+                      console.log(ps)
+                    } catch (e) {
+                      console.log('personhood create')
+                    }
+
+                  const response = await fetch(`${ENDPOINT}/campaigns/score?address=${currentAddress}`)
+                  const scoreStatus = await response.json()
+
+                  console.log(scoreStatus)
                 }
             });
             return true;
