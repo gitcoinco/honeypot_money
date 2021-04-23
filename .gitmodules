@@ -1,0 +1,3 @@
+[submodule "honeypot_money/pop_api"]
+	path = honeypot_money/pop_api
+	url = https://github.com/gitcoinco/pop_api.git

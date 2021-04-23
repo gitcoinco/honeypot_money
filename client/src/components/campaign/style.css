@@ -1,0 +1,882 @@
+:root {
+    --header: 'Work Sans', sans-serif;
+    --header-serif: 'Kiwi Maru', serif;
+    --copy: 'Delius', cursive;
+    --day-orange: #EF8620;
+    --black: #111111;
+    --night-yellow: #FFD22E;
+    --white: #FFFFFF;
+
+    /*gradient bg for components*/
+    --gr-night: linear-gradient(180deg, rgba(35, 51, 69, 0.96) 0%, rgba(16, 36, 58, 0.96) 100%);
+    --gr-night-hover: linear-gradient(180deg, rgba(35, 51, 69, 1) 0%, rgba(16, 36, 58, 1) 100%);
+    --gr-day: linear-gradient(180deg, rgba(254, 252, 244, 0.96) 0%, rgba(255, 246, 235, 0.96) 100%);
+    --gr-day-hover: linear-gradient(180deg, rgba(254, 252, 244, 1) 0%, rgba(255, 246, 235, 1) 100%);
+    --gr-button: linear-gradient(180deg, #FFBF5B 0%, #E97A1C 100%);
+
+    /*honeypot-graphics*/
+
+    --honeypot-mobile-day: url('https://supersecretbanana.com/honeypot/assets/honeypot_mobile_day.svg');
+    --honeypot-mobile-night: url('https://supersecretbanana.com/honeypot/assets/honeypot_mobile_night.svg');
+    --honeypot-desktop-day: url('https://supersecretbanana.com/honeypot/assets/honeypot_desktop_day.svg');
+    --honeypot-desktop-night: url('https://supersecretbanana.com/honeypot/assets/honeypot_desktop_night.svg');
+
+    /*foreground elements url*/
+
+    --flower01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower01_l.svg');
+    --flower01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower01_r.svg');
+    --flower02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower02_l.svg');
+    --flower02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower02_r.svg');
+    --flower03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower03_l.svg');
+    --flower03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower03_r.svg');
+
+    --shroom01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom01_l.svg');
+    --shroom01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom01_r.svg');
+    --shroom02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom02_l.svg');
+    --shroom02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom02_r.svg');
+
+    --insect01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect01_l.svg');
+    --insect01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect01_r.svg');
+    --insect02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect02_l.svg');
+    --insect02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect02_r.svg');
+
+    --plant01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant01_l.svg');
+    --plant01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant01_r.svg');
+    --plant02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant02_l.svg');
+    --plant02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant02_r.svg');
+    --plant03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant03_l.svg');
+    --plant03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant03_r.svg');
+
+    --fungus01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus01_l.svg');
+    --fungus01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus01_r.svg');
+    --fungus02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus02_l.svg');
+    --fungus02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus02_r.svg');
+
+    --grass-01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass01_l.svg');
+    --grass-01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass01_r.svg');
+    --grass-02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass02_l.svg');
+    --grass-02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass02_r.svg');
+    --grass-03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass03_l.svg');
+    --grass-03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass03_r.svg');
+    --grass-04-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass04_l.svg');
+    --grass-04-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass04_r.svg');
+    --grass-05-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass05_l.svg');
+    --grass-05-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass05_r.svg');
+
+    --night-grass-01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass01_l.svg');
+    --night-grass-01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass01_r.svg');
+    --night-grass-02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass02_l.svg');
+    --night-grass-02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass02_r.svg');
+    --night-grass-03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass03_l.svg');
+    --night-grass-03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass03_r.svg');
+    --night-grass-04-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass04_l.svg');
+    --night-grass-04-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass04_r.svg');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.hidden {display: none;}
+.invisible {visibility: hidden;}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #35525F 0%, #43606C 10%);
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    /* top: -30px; */
+    /* text-align: center; */
+    align-self: flex-start;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--header);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info {
+    padding: 16px;
+}
+
+#campaignHead {
+    padding-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-campaign {
+    border-top: 1px solid var(--day-orange);
+}
+
+.night-campaign {
+    border-top: 1px solid var(--night-yellow);
+}
+
+.brightId-black {
+    background-image: url('../../assets/logo_brightID_black.png');
+    height: 20px;
+    width: 73px;
+}
+
+.brightId-white {
+    background-image: url('../../assets/logo_brightID_white.png');
+    height: 20px;
+    width: 73px;
+}
+
+#campaignHead>h1>span {
+    font-family: var(--header);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#honeyPot {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+}
+
+.honeypot-day {
+    background-image: var(--honeypot-mobile-day);
+    height: 148px;
+    width: 148px;
+}
+
+.honeypot-night {
+    background-image: var(--honeypot-mobile-night);
+    height: 148px;
+    width: 148px;
+}
+
+#campaignDesc {
+    padding-top: 14px;
+}
+
+h2 {
+    position: relative;
+    /* top: -20px; */
+    font-family: var(--header);
+    font-size: 16px;
+    color: var(--white);
+    text-transform: uppercase;
+    width: 280px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--day-orange);
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+p {
+    font-family: var(--copy);
+    font-size: 14px;
+}
+
+#campaign {
+    width: 260px;
+    /* height: 100px; */
+    position: relative;
+    margin: 0 auto;
+    /* top: 40px; */
+    cursor: pointer;
+}
+
+.button {
+    padding: 8px 14px;
+    background: var(--gr-button);
+    border-radius: 14px;
+}
+
+.expand {
+    height: 300px;
+    transition: height 0.1s ease-in-out;
+}
+
+.expand-connect {
+    height: 180px;
+    transition: height 0.1s ease-in-out;
+}
+
+.collapse {
+    height: 100px;
+    transition: height 0.1s ease-in-out;
+}
+
+.day-mode {
+    background: var(--gr-day);
+    border: 2px solid var(--day-orange);
+    border-radius: 4px;
+}
+
+.day-mode:hover {
+    background: var(--gr-day-hover);
+}
+
+.night-mode {
+    background: var(--gr-night);
+    border: 2px solid var(--night-yellow);
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.night-mode:hover {
+    background: var(--gr-night-hover);
+}
+
+.status {
+    /* height: 60px; */
+    top: 40px;
+}
+
+.module {
+    top: 40px;
+}
+
+.info {
+    width: 216px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#status {
+    position: relative;
+    margin: 0 auto;
+    color: var(--day-orange);
+    text-align: center;
+    /* top: 8px; */
+    font-family: var(--header);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+}
+
+#status>span {
+    font-family: var(--header-serif);
+    font-weight: 500;
+    text-transform: none;
+    font-size: 14px;
+}
+
+#graphic {
+    position: relative;
+    height: 400px;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.morning {
+    background-image: url('../../graphics/campaign_mobile_day.svg');
+}
+
+.connect-morning {
+    background-image: url('../../graphics/connect_mobile_day.svg');
+}
+
+.success-morning {
+    background-image: url('../../graphics/success_mobile_day.svg');
+}
+
+.fail-morning {
+    background-image: url('../../graphics/fail_mobile_day.svg');
+}
+
+.campaign-none-morning {
+    background-image: url('../../graphics/campaign_none_mobile_day.svg');
+}
+
+.night {
+    background-image: url('../../graphics/campaign_mobile_night.svg');
+}
+
+.connect-night {
+    background-image: url('../../graphics/connect_mobile_night.svg');
+}
+
+.success-night {
+    background-image: url('../../graphics/success_mobile_night.svg');
+}
+
+.fail-night {
+    background-image: url('../../graphics/fail_mobile_night.svg');
+}
+
+.campaign-none-night {
+    background-image: url('../../graphics/campaign_none_mobile_night.svg');
+}
+
+#btnPickUp {
+    background-image: url('../../assets/btn_pickup.svg');
+    position: relative;
+    height: 40px;
+    width: 181px;
+    margin: 0 auto;
+    bottom: -16px;
+}
+
+#btnConnectWeb3 {
+    background-image: url('../../assets/btn_connect_web3.svg');
+    position: relative;
+    height: 40px;
+    width: 182px;
+    margin: 0 auto;
+    bottom: -16px;
+}
+
+#btnConnectBright {
+    background-image: url('../../assets/btn_connect_bright.svg');
+    position: relative;
+    height: 40px;
+    width: 212px;
+    margin: 0 auto;
+    bottom: -16px;
+}
+
+#progressBar {
+    position: relative;
+    height: 8px;
+    width: 216px;
+    background-color: #43606C;
+    border-radius: 4px;
+    top: 50px;
+}
+
+#progress {
+    position: relative;
+    height: 8px;
+    width: calc(100%/3);
+    background-color: var(--night-yellow);
+    border-radius: 4px;
+    transition: width 0.1s ease-in-out;
+
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.btn {
+    position: relative;
+    top: 8px;
+    height: 24px;
+    padding: 8px 16px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: var(--header);
+    color: white;
+    border-radius: 4px;
+}
+
+#btnBack {
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+#btnBack:hover {
+    cursor: pointer;
+}
+
+.back-day {
+    background-image: url('../../assets/back_day.svg');
+    width: 74px;
+    height: 36px;
+}
+
+.back-night {
+    background-image: url('../../assets/back_night.svg');
+    width: 74px;
+    height: 36px;
+}
+
+.home-day {
+    background-image: url('../../assets/btn_home.svg');
+    width: 80px;
+    height: 36px;
+}
+
+.home-night {
+    background-image: url('../../assets/btn_home_night.svg');
+    width: 80px;
+    height: 36px;
+}
+
+.tryAgain-day {
+    background-image: url('../../assets/btn_tryAgain_day.svg');
+    width: 115px;
+    height: 36px;
+}
+
+.tryAgain-night {
+    background-image: url('../../assets/btn_tryAgain_night.svg');
+    width: 115px;
+    height: 36px;
+}
+
+#btnHelp {
+    position: relative;
+    top: 8px;
+    right: 20px;
+    height: 36px;
+    width: 36px;
+}
+
+#btnHelp:hover {
+    cursor: pointer;
+}
+
+
+.help-day {
+    background-image: url('../../assets/help_day.svg');
+}
+
+.help-night {
+    background-image: url('../../assets/help_night.svg');
+}
+
+.home {
+    left: 20px;
+}
+
+.help {
+    right: 20px;
+}
+
+/*foreground elements*/
+
+.foreground {
+    position: absolute;
+    bottom: 0px;
+}
+
+#leftFlower {
+    left: -10px;
+}
+
+.left-flower-01 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower01-l);
+    background-repeat: no-repeat;
+}
+
+.left-flower-02 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower02-l);
+    background-repeat: no-repeat;
+}
+
+.left-flower-03 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower03-l);
+    background-repeat: no-repeat;
+}
+
+.left-shroom-01 {
+    height: 49px;
+    width: 80px;
+    background-image: var(--shroom01-l);
+    background-repeat: no-repeat;
+}
+
+.left-shroom-02 {
+    height: 49px;
+    width: 80px;
+    background-image: var(--shroom02-l);
+    background-repeat: no-repeat;
+}
+
+#rightFlower {
+    right: -10px;
+}
+
+.right-flower-01 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower01-r);
+    background-repeat: no-repeat;
+}
+
+.right-flower-02 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower02-r);
+    background-repeat: no-repeat;
+}
+
+.right-flower-03 {
+    height: 100px;
+    width: 40px;
+    background-image: var(--flower03-r);
+    background-repeat: no-repeat;
+}
+
+.right-shroom-01 {
+    height: 49px;
+    width: 80px;
+    background-image: var(--shroom01-r);
+    background-repeat: no-repeat;
+}
+
+.right-shroom-02 {
+    height: 49px;
+    width: 80px;
+    background-image: var(--shroom02-r);
+    background-repeat: no-repeat;
+}
+
+#leftInsect {
+    left: 6px;
+}
+
+.left-insect-01 {
+    width: 100px;
+    height: 100px;
+    background-image: var(--insect01-l);
+    background-repeat: no-repeat;
+}
+
+.left-insect-02 {
+    width: 100px;
+    height: 100px;
+    background-image: var(--insect02-l);
+    background-repeat: no-repeat;
+}
+
+#rightInsect {
+    right: 6px;
+}
+
+.right-insect-01 {
+    width: 100px;
+    height: 100px;
+    background-image: var(--insect01-r);
+    background-repeat: no-repeat;
+}
+
+.right-insect-02 {
+    width: 100px;
+    height: 100px;
+    background-image: var(--insect02-r);
+    background-repeat: no-repeat;
+}
+
+#leftPlant{
+    left: 10px;
+}
+
+.left-plant-01 {
+    width: 60px;
+    height: 58px;
+    background-image: var(--plant01-l);
+    background-repeat: no-repeat;
+}
+
+.left-plant-02 {
+    width: 60px;
+    height: 80px;
+    background-image: var(--plant02-l);
+    background-repeat: no-repeat;
+}
+
+.left-plant-03 {
+    width: 60px;
+    height: 80px;
+    background-image: var(--plant03-l);
+    background-repeat: no-repeat;
+}
+
+.left-fungus-01 {
+    width: 30px;
+    height: 27px;
+    background-image: var(--fungus01-l);
+    background-repeat: no-repeat;
+}
+
+.left-fungus-02 {
+    width: 30px;
+    height: 27px;
+    background-image: var(--fungus02-l);
+    background-repeat: no-repeat;
+}
+
+#rightPlant{
+    right: 10px;
+}
+
+.right-plant-01 {
+    width: 60px;
+    height: 58px;
+    background-image: var(--plant01-r);
+    background-repeat: no-repeat;
+}
+
+.right-plant-02 {
+    width: 60px;
+    height: 80px;
+    background-image: var(--plant02-r);
+    background-repeat: no-repeat;
+}
+
+.right-plant-03 {
+    width: 60px;
+    height: 80px;
+    background-image: var(--plant03-r);
+    background-repeat: no-repeat;
+}
+
+.right-fungus-01 {
+    width: 30px;
+    height: 27px;
+    background-image: var(--fungus01-r);
+    background-repeat: no-repeat;
+}
+
+.right-fungus-02 {
+    width: 30px;
+    height: 27px;
+    background-image: var(--fungus02-r);
+    background-repeat: no-repeat;
+}
+
+
+#leftGrass {
+    left: -8px;
+}
+
+.left-grass-01 {
+    width: 60px;
+    height: 75px;
+    background-image: var(--grass-01-l);
+    background-repeat: no-repeat;
+}
+
+.left-grass-02 {
+    width: 58px;
+    height: 46px;
+    background-image: var(--grass-02-l);
+    background-repeat: no-repeat;
+}
+
+.left-grass-03 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--grass-03-l);
+    background-repeat: no-repeat;
+}
+
+.left-grass-04 {
+    width: 120px;
+    height: 29px;
+    background-image: var(--grass-04-l);
+    background-repeat: no-repeat;
+}
+
+.left-grass-05 {
+    width: 120px;
+    height: 29px;
+    background-image: var(--grass-05-l);
+    background-repeat: no-repeat;
+}
+
+.left-night-grass-01 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--night-grass-01-l);
+    background-repeat: no-repeat;
+}
+
+.left-night-grass-02 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--night-grass-02-l);
+    background-repeat: no-repeat;
+}
+
+#rightGrass {
+    right: -8px;
+}
+
+.right-grass-01 {
+    width: 60px;
+    height: 75px;
+    background-image: var(--grass-01-r);
+    background-repeat: no-repeat;
+}
+
+.right-grass-02 {
+    width: 58px;
+    height: 46px;
+    background-image: var(--grass-02-r);
+    background-repeat: no-repeat;
+}
+
+.right-grass-03 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--grass-03-r);
+    background-repeat: no-repeat;
+}
+
+.right-grass-04 {
+    width: 120px;
+    height: 29px;
+    background-image: var(--grass-04-r);
+    background-repeat: no-repeat;
+}
+
+.right-grass-05 {
+    width: 120px;
+    height: 29px;
+    background-image: var(--grass-05-r);
+    background-repeat: no-repeat;
+}
+
+.right-night-grass-01 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--night-grass-01-r);
+    background-repeat: no-repeat;
+}
+
+.right-night-grass-02 {
+    width: 80px;
+    height: 12px;
+    background-image: var(--night-grass-02-r);
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        width: 480px;
+    }
+
+    .logo {
+        position: relative;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    h2 {
+        width: 480px;
+    }
+
+    #campaign {
+        width: 400px;
+    }
+
+    .status {
+        top: 140px;
+    }
+
+    .module {
+        top: 80px;
+    }
+
+    .expand {
+        height: 360px;
+        transition: height 0.1s ease-in-out;
+    }
+
+    .info {
+        width: 360px;
+    }
+
+    #graphic {
+        top: -8px;
+        height: 600px;
+        width: 480px;
+    }
+
+    .morning {
+        background-image: url('../../graphics/campaign_desktop_day.svg');
+    }
+
+    .connect-morning {
+        background-image: url('../../graphics/connect_desktop_day.svg');
+    }
+
+    .success-morning {
+        background-image: url('../../graphics/success_desktop_day.svg');
+    }
+
+    .fail-morning {
+        background-image: url('../../graphics/fail_desktop_day.svg');
+    }
+
+    .campaign-none-morning {
+        background-image: url('../../graphics/campaign_none_desktop_day.svg');
+    }
+
+    .night {
+        background-image: url('../../graphics/campaign_desktop_night.svg');
+    }
+
+    .connect-night {
+        background-image: url('../../graphics/connect_desktop_night.svg');
+    }
+
+    .success-night {
+        background-image: url('../../graphics/success_desktop_night.svg');
+    }
+
+    .fail-night {
+        background-image: url('../../graphics/fail_desktop_night.svg');
+    }
+
+    .campaign-none-night {
+        background-image: url('../../graphics/campaign_none_desktop_night.svg');
+    }
+
+    /* #honeyPot {
+        top: 40px;
+    } */
+
+    .honeypot-day {
+        background-image: var(--honeypot-desktop-day);
+        height: 200px;
+        width: 200px;
+    }
+
+    .honeypot-night {
+        background-image: var(--honeypot-desktop-night);
+        height: 200px;
+        width: 200px;
+    }
+
+    #progressBar {
+        width: 360px;
+    }
+
+    #btnBack {
+        left: 0px;
+    }
+
+    #btnHelp {
+        right: 0px;
+    }
+
+}
